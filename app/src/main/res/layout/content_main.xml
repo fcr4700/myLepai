@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="qf.com.myprojectlepai.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:id="@+id/fragmentId"></RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/mainRadioTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/main_Msg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@drawable/message_selecter"
+            android:button="@null"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/main_Pic"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@drawable/picture_selector"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/main_bbs"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@drawable/forum_selector"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/main_Set"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@drawable/setting_selector"
+            android:button="@null" />
+    </RadioGroup>
+</RelativeLayout>
